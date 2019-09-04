@@ -24,7 +24,7 @@ public class SchemaRegistryProducerMain {
         Person kenny = new Person(125745, "Kenny", "Armstrong", "kenny@linuxacademy.com");
         producer.send(new ProducerRecord<String, Person>("employees", kenny.getId().toString(), kenny));
         
-        Person terry = new Person(943256, "Terry", "Cox", "kenny@linuxacademy.com");
+        Person terry = new Person(943256, "Terry", "Cox", "terry@linuxacademy.com");
         producer.send(new ProducerRecord<String, Person>("employees", terry.getId().toString(), terry));
         
         producer.close();
