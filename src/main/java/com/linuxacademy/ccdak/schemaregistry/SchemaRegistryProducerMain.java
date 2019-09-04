@@ -1,12 +1,12 @@
 package com.linuxacademy.ccdak.schemaregistry;
 
-import com.fasterxml.jackson.databind.ser.std.StringSerializer;
 import io.confluent.kafka.serializers.AbstractKafkaAvroSerDeConfig;
 import io.confluent.kafka.serializers.KafkaAvroSerializer;
 import java.util.Properties;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.clients.producer.ProducerRecord;
+import org.apache.kafka.common.serialization.StringSerializer;
 
 public class SchemaRegistryProducerMain {
 
